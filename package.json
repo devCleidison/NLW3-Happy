@@ -1,5 +1,5 @@
 {
-  "name": "NLW3-Happy",
+  "name": "nlw3-happy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devCleidison/NLW3-Happy.git"
+    "url": "git+https://github.com/devCleidison/nlw3-happy.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devCleidison/NLW3-Happy/issues"
+    "url": "https://github.com/devCleidison/nlw3-happy/issues"
   },
-  "homepage": "https://github.com/devCleidison/NLW3-Happy#readme",
+  "homepage": "https://github.com/devCleidison/nlw3-happy#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "hbs": "^4.1.1",
     "nodemon": "^2.0.6"
   }
 }
