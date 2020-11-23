@@ -1,10 +1,7 @@
-// create map
 const map = L.map('mapid').setView([-27.222633,-49.6455874], 15)
 
-// create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map)
 
-// create icon
 const icon = L.icon({
     iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
@@ -13,8 +10,6 @@ const icon = L.icon({
 })
 
 function addMarker({ id, name, lat, lng }) {
-
-    // create popup overlay
     const popup = L.popup({
         closeButton: false,
         className: 'map-popup',
@@ -22,7 +17,6 @@ function addMarker({ id, name, lat, lng }) {
         minHeight: 240
     }).setContent(`${name} <a href="/orphanage?id=${id}"><img src="/images/arrow-white.svg"> </a>`)
 
-    // create and add marker
     L
     .marker([lat, lng], { icon })
     .addTo(map)
